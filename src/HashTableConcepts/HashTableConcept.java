@@ -2,13 +2,16 @@ package HashTableConcepts;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 public class HashTableConcept
 {
 	public static void main(String[] args)
 	{
-		//HashTable stores the Values on the Basis of Key and Value Pair.
+	/*	//HashTable stores the Values on the Basis of Key and Value Pair.
 		//HashTable is similar to HashMap.
 		//HashTable is Synchronized and It is Thread Safe.
 		//One Thread can access Only one HashTable Object at a Time.
@@ -79,9 +82,19 @@ public class HashTableConcept
 		//To get Value from a Key:
 		System.out.println(hashTable4.get("A"));
 
-		System.out.println("###########################");
+		System.out.println("###########################");*/
 
 		//Generics
-		Hashtable<String, String> hashTable5 = new Hashtable<String, String>();
+		
+		Hashtable<String, String> hash = new Hashtable<String, String>();
+		hash.put("Mahendra", "Infosys");
+		hash.put("Mukesh","Chekawa");
+		Set<Entry<String,String>> st=  hash.entrySet();
+		System.out.println(st.iterator().next().getKey()+"   "+st.iterator().next().getValue());
+		System.out.println(st.iterator().next().getKey()+"   "+st.iterator().next().getValue());
+		
+		for (Map.Entry m:hash.entrySet()) {
+	            System.out.println(m.getKey()+" "+m.getValue());
+		 }
 	}
 }

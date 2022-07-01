@@ -5,9 +5,10 @@ public class ArrayListConcept
 {
 	public static void main(String[] args)
 	{
-		//Here it will accept int, Character and String values as well.
+		System.out.println("te3st");
+	/*	//Here it will accept int, Character and String values as well.
 		//Below is Non-Generics
-		ArrayList demo = new ArrayList(); //Here it will import List and ArrayList Values.
+		ArrayList <Object> demo = new ArrayList<Object> (); //Here it will import List and ArrayList Values.
 		demo.add(1);
 		demo.add("Om"); //List is a Java interface which extends collections interface.
 		demo.add("SaiBaba"); //List is a grouping of ordered elements.(maintain order)
@@ -54,6 +55,6 @@ public class ArrayListConcept
 		{
 			Object value = iterator.next();
 			System.out.println("ArrayList Values are ::: " +value);
-		}
+		}*/
 	}
 }
